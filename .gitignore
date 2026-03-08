@@ -7,6 +7,6 @@ dist/
 # Prisma generated client
 /src/generated/prisma
 
-# SQLite database files
+# SQLite database files (local dev only)
 prisma/*.db
 prisma/*.db-journal
