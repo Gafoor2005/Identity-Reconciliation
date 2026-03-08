@@ -4,7 +4,7 @@ import { identifyContact } from "../services/identifyService";
 const router = Router();
 
 router.post("/", async (req: Request, res: Response) => {
-  const { email, phoneNumber } = req.body as {
+  const { email, phoneNumber } = (req.body ?? {}) as {
     email?: string | null;
     phoneNumber?: string | null;
   };
